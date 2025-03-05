@@ -76,6 +76,11 @@ export async function execute(
 			const binaryData = this.helpers.assertBinaryData(i, binaryPropertyName);
 			fileExtension = binaryData.fileExtension;
 
+			console.log('fileFormat', fileFormat);
+			console.log('binaryPropertyName', binaryPropertyName);
+			console.log('binaryData.mimeType', binaryData.mimeType);
+			console.log('binaryData.fileExtension', binaryData.fileExtension);
+
 			let rows: unknown[] = [];
 
 			if (
